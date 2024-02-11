@@ -4,6 +4,8 @@ Shadcn/ui - Next.js Template is a customizable Next.js template that comes with 
 
 Don't forget to star the repository if you find it useful! ⭐️
 
+Check it out: https://shadcnui-next-js-template.vercel.app
+
 ## Features
 
 - **Authentication**: Includes authentication pages for login and signup.🔐
