@@ -1,4 +1,4 @@
-import { CSSProperties, FunctionComponent, ReactNode, useState } from 'react';
+import { useState, ReactNode, CSSProperties, FunctionComponent } from 'react';
 
 import { CommonBurgerProps } from './types';
 

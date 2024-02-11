@@ -2,35 +2,31 @@
   "root": true,
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
   },
-  "plugins": [
-    "perfectionist",
-    "unused-imports",
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["perfectionist", "unused-imports", "@typescript-eslint", "prettier"],
   "extends": [
     "airbnb",
     "airbnb-typescript",
     "airbnb/hooks",
-    "prettier"
+    "prettier",
+    "plugin:@next/next/recommended",
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
-      "jsx": true
+      "jsx": true,
     },
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.json",
   },
   "settings": {
     "import/resolver": {
       "typescript": {
-        "alwaysTryTypes": true
-      }
-    }
+        "alwaysTryTypes": true,
+      },
+    },
   },
   "rules": {
     "no-alert": 0,
@@ -55,33 +51,33 @@
     "react/jsx-no-useless-fragment": [
       1,
       {
-        "allowExpressions": true
-      }
+        "allowExpressions": true,
+      },
     ],
     "prefer-destructuring": [
       1,
       {
         "object": true,
-        "array": false
-      }
+        "array": false,
+      },
     ],
     "react/no-unstable-nested-components": [
       1,
       {
-        "allowAsProps": true
-      }
+        "allowAsProps": true,
+      },
     ],
     "@typescript-eslint/no-unused-vars": [
       1,
       {
-        "args": "none"
-      }
+        "args": "none",
+      },
     ],
     "react/jsx-no-duplicate-props": [
       1,
       {
-        "ignoreCase": false
-      }
+        "ignoreCase": false,
+      },
     ],
     // unused-imports
     // https://www.npmjs.com/package/eslint-plugin-unused-imports
@@ -92,8 +88,8 @@
         "vars": "all",
         "varsIgnorePattern": "^_",
         "args": "after-used",
-        "argsIgnorePattern": "^_"
-      }
+        "argsIgnorePattern": "^_",
+      },
     ],
     // perfectionist
     // https://eslint-plugin-perfectionist.azat.io/
@@ -101,22 +97,22 @@
       1,
       {
         "order": "asc",
-        "type": "line-length"
-      }
+        "type": "line-length",
+      },
     ],
     "perfectionist/sort-named-exports": [
       1,
       {
         "order": "asc",
-        "type": "line-length"
-      }
+        "type": "line-length",
+      },
     ],
     "perfectionist/sort-exports": [
       1,
       {
         "order": "asc",
-        "type": "line-length"
-      }
+        "type": "line-length",
+      },
     ],
     "perfectionist/sort-imports": [
       1,
@@ -125,10 +121,7 @@
         "type": "line-length",
         "newlines-between": "always",
         "groups": [
-          [
-            "builtin",
-            "external"
-          ],
+          ["builtin", "external"],
           "custom-mui",
           "custom-routes",
           "custom-hooks",
@@ -137,13 +130,9 @@
           "custom-components",
           "custom-sections",
           "custom-types",
-          [
-            "parent",
-            "sibling",
-            "index"
-          ],
+          ["parent", "sibling", "index"],
           "object",
-          "unknown"
+          "unknown",
         ],
         "custom-groups": {
           "value": {
@@ -153,13 +142,11 @@
             "custom-utils": "src/utils/**",
             "custom-components": "src/components/**",
             "custom-sections": "src/sections/**",
-            "custom-types": "src/types/**"
-          }
+            "custom-types": "src/types/**",
+          },
         },
-        "internal-pattern": [
-          "src/**"
-        ]
-      }
-    ]
-  }
+        "internal-pattern": ["src/**"],
+      },
+    ],
+  },
 }
