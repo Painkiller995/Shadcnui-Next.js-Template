@@ -129,3 +129,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [ESLint Documentation](https://eslint.org/docs)
 - [Prettier Documentation](https://prettier.io/docs/en/)
+
+**Project Visitors**
+
+![Project Visitors](https://profile-counter.glitch.me/Shadcnui-Next.js-Template/count.svg)
