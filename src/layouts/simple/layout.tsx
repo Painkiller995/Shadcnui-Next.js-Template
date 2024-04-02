@@ -8,7 +8,7 @@ interface RootLayoutProps {
 export default function SimpleLayout({ children }: RootLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">
-      <SiteHeader useAuth={false} useNavigator={false} className="border-b border-border/40" />
+      <SiteHeader useNavigator={false} className="border-b border-border/40" />
       <div className="flex flex-1">
         <div className="flex-1">{children}</div>
       </div>
