@@ -18,7 +18,11 @@ const SiteHeader = ({ useNavigator = true, className }: SiteHeaderProps) => (
     )}
   >
     {useNavigator ? <Navigator /> : <HeaderLogo className="pr-6" />}
-    <ModeToggle />
+
+    <div className="flex items-center space-x-4">
+      <ModeToggle />
+    </div>
   </header>
 );
+
 export default SiteHeader;

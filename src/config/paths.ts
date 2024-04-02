@@ -3,6 +3,7 @@ import { NavItem } from '@/types/nav';
 export const auth = {
   login: '/login',
   signUp: '/signup',
+  forgotPassword: '/forgot-password',
 };
 
 export const paths = {
@@ -23,6 +24,11 @@ export const pathsArr: NavItem[] = [
     title: 'Sign Up',
     description: 'Create a new account',
     href: paths.signUp,
+  },
+  {
+    title: 'Forgot Password',
+    description: 'Reset Password',
+    href: paths.forgotPassword,
   },
   {
     title: 'Home',

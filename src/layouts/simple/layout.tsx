@@ -7,13 +7,12 @@ interface RootLayoutProps {
 
 export default function SimpleLayout({ children }: RootLayoutProps) {
   return (
-    <div className="grid min-h-screen grid-cols-[0.75fr,1fr,1fr,1fr] grid-rows-[0.1fr,5fr,1fr]">
-      <SiteHeader
-        useNavigator={false}
-        className="col-span-4 row-span-1 border-b border-border/40"
-      />
-      <div className="col-span-4 row-span-2">{children}</div>
-      <Footer className="col-span-4 row-span-3 border border-border/40" />
+    <div className="flex min-h-screen flex-col">
+      <SiteHeader useAuth={false} useNavigator={false} className="border-b border-border/40" />
+      <div className="flex flex-1">
+        <div className="flex-1">{children}</div>
+      </div>
+      <Footer className="border border-border/40" />
     </div>
   );
 }
